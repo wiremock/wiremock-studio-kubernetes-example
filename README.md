@@ -1,4 +1,4 @@
-# WireMock Studio Kubernetes Examples
+# WireMock Studio Kubernetes Example
 
 WireMock Studio can be deployed into a Kubernetes cluster using the manifest in this project.
 

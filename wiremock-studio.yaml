@@ -64,7 +64,7 @@ spec:
       
       containers:
         - name: wiremock-studio
-          image: up9inc/wiremock-studio:2.32.0-16
+          image: up9inc/wiremock-studio:2.32.0-17
           args: ["--verbose"]
           imagePullPolicy: IfNotPresent
           ports:

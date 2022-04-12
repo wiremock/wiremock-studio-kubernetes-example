@@ -28,30 +28,16 @@ roleRef:
 
 ---
 apiVersion: v1
-kind: PersistentVolume
-metadata:
-  name: wiremock-studio-volume
-spec:
-  accessModes:
-    - ReadWriteMany
-  capacity:
-    storage: 1Gi
-  storageClassName: standard
-  hostPath:
-    path: "/home/wiremock"
----
-apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: wiremock-studio-claim
 spec:
-  volumeName: wiremock-studio-volume
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
   resources:
     requests:
       storage: 1Gi
-  storageClassName: standard
+  storageClassName: null
 
 ---
 apiVersion: apps/v1
